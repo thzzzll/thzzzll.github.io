@@ -1,6 +1,25 @@
+<script>
+let p = prompt("PAYLOAD")
+
+if ( p.length > 0) {
+	function ascii(c){
+ 		return c.charCodeAt();
+	}
+
+	r = p.split("").map(ascii);
+	document.write('<pre>');
+	document.writeln(" ");
+	document.writeln("  payload		: ", p);
+	document.writeln("  payload length	: ", p.length);
+	document.writeln("  result		: ", r);
+	document.writeln(" ");
+	document.write('</pre>');
+}
+</script>
+
 <pre>
+<p>  ASCII table reference</p>
 <p>
-{
 "31": "",      "32": " ",     "33": "!",     "34": "\"",    "35": "#",    
 "36": "$",     "37": "%",     "38": "&",     "39": "'",     "40": "(",    
 "41": ")",     "42": "*",     "43": "+",     "44": ",",     "45": "-",    
@@ -21,25 +40,5 @@
 "116": "t",    "117": "u",    "118": "v",    "119": "w",    "120": "x",    
 "121": "y",    "122": "z",    "123": "{",    "124": "|",    "125": "}",    
 "126": "~",    "127": ""
-}
 </p>
 </pre>
-
-<script>
-let p = prompt("PAYLOAD")
-
-if ( p.length > 0) {
-	function ascii(c){
- 		return c.charCodeAt();
-	}
-
-	r = p.split("").map(ascii);
-	document.write('<pre>');
-	document.writeln(" ");
-	document.writeln("  payload		: ", p);
-	document.writeln("  payload length	: ", p.length);
-	document.writeln("  result		: ", r);
-	document.writeln(" ");
-	document.write('</pre>');
-}
-</script>
