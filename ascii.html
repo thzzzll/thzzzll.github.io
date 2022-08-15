@@ -1,0 +1,18 @@
+<script>
+let p = prompt("PAYLOAD")
+
+if ( p.length > 0) {
+	function ascii(c){
+ 		return c.charCodeAt();
+	}
+
+	r = p.split("").map(ascii);
+	document.write('<pre>');
+	document.writeln(" ");
+	document.writeln("  payload		: ", p);
+	document.writeln("  payload length	: ", p.length);
+	document.writeln("  result		: ", r);
+	document.writeln(" ");
+	document.write('</pre>');
+}
+</script>
