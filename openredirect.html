@@ -27,14 +27,16 @@
         display: block;
       }
   </style>
+
+  <script>
+    let p = prompt("TARGET")
+    document.writeln(p);
+  </script>
 </head>
   <body>
-    <a href="https://merchant.antrique.com/mdashboard" target="_blank">
+    <a href="${p}" target="_blank">
       <button>
-        <script>
-          let p = prompt("PAYLOAD")
-          document.writeln(p);
-        </script>
+        <script>document.writeln(p);</script>
       </button>
     </a>
   </body>
