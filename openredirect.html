@@ -1,6 +1,8 @@
+<!doctype html>
+
 <html>
   <head>
-    <style>
+  <style>
       button {
         background-color: #8c34eb;
         text_decoration: none;
@@ -29,18 +31,15 @@
         display: block;
       }
   </style>
-
-  <script>
-    let p = prompt("TARGET")
-  </script>
-</head>
+    <script type='text/javascript'>
+      window.addEventListener("load",function(){
+        var siteURL = prompt("TARGET");
+        var a = document.body.appendChild(document.createElement("a"));
+        a.href = 'https://'+siteURL;
+        a.innerHTML = "<button> R E D I R E C T </button>";
+      });
+    </script>
+  </head>
   <body>
-    <a href="https://${p}" target="_blank">
-      <button>
-        R E D I R E C T
-      </button>
-      <br>
-      <script>document.writeln(p);</script>
-    </a>
   </body>
 </html>
