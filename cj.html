@@ -15,11 +15,8 @@
             align-items: center;
             flex-direction: column;
          }
-         a {
-            text_decoration: none;
-            color: #8c34eb;
-            margin-top:auto;
-            display: block;
+         iframe {
+            border: none;
          }
          p {
             margin-bottom:auto;
@@ -31,7 +28,7 @@
            let a = document.body.appendChild(document.createElement("iframe"));
            a.src = 'https://'+siteURL;
            a.width= "100%";
-           a.height= "95%";
+           a.height= "98%";
            let b = document.body.appendChild(document.createElement("p"));
            b.innerHTML = siteURL;
          });
