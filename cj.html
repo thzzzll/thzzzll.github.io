@@ -41,7 +41,7 @@
          window.addEventListener("load",function(){
            let siteURL = prompt("TARGET");
            let a = document.body.appendChild(document.createElement("iframe"));
-           a.href = 'https://'+siteURL;
+           a.src = 'https://'+siteURL;
            let b = document.body.appendChild(document.createElement("p"));
            b.innerHTML = siteURL;
          });
